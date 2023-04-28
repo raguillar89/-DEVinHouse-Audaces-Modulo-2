@@ -6,32 +6,28 @@ using System.Threading.Tasks;
 
 namespace Exercicio9
 {
-    static class Calculadora
+    public static class Calculadora
     {
         public const double pi = 3.1415926559;
 
-        public static void Somar(double n1, double n2)
+        public static double Somar(double n1, double n2)
         {
-            double total = n1 + n2;
-            Console.WriteLine($"Total da Soma: {total}");
+            return n1 + n2;
         }
 
-        public static void Subtrair(double n1, double n2)
+        public static double Subtrair(double n1, double n2)
         {
-            double total = n1 - n2;
-            Console.WriteLine($"Total da Subtração: {total}");
+            return n1 - n2;
         }
 
-        public static void Multiplicar(double n1, double n2)
+        public static double Multiplicar(double n1, double n2)
         {
-            double total = n1 * n2;
-            Console.WriteLine($"Total da Multiplicação: {total}");
+            return n1 * n2;
         }
 
-        public static void Dividir(double n1, double n2)
+        public static double Dividir(double n1, double n2)
         {
-            double total = n1 / n2;
-            Console.WriteLine($"Total da Divisão: {total}");
+            return n1 / n2;
         }
     }
 }
