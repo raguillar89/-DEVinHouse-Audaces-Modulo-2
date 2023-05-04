@@ -33,10 +33,14 @@
             _Age = age;
         }
 
-        public void ResumoCliente()
+        public override string ConverterTexto()
         {            
-            Console.WriteLine($"\nCPF: {_Cpf}\nIdade: {_Age}\nNúmero da Conta: {_AccountNumber}");
-            base.ResumoCliente();
+            return $"{base.ConverterTexto()}\nCPF: {_Cpf}\nIdade: {_Age}\nNúmero da Conta: {_AccountNumber}";            
+        }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}\nCPF: {_Cpf}\nIdade: {_Age}\nNúmero da Conta: {_AccountNumber}";
         }
 
         public void EhMaior()

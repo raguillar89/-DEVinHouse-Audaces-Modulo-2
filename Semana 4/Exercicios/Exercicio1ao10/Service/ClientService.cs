@@ -5,10 +5,8 @@ namespace Exercicio1ao10.Service
 {
     class ClientService : IClientService
     {
-        List<PessoaFisica> pf = new List<PessoaFisica>();
-        List<PessoaJuridica> pj = new List<PessoaJuridica>();
-        private readonly PessoaFisicaService pfService = new PessoaFisicaService();
-        private readonly PessoaJuridicaService pjService = new PessoaJuridicaService();
+        List<Clientes> clientes = new List<Clientes>();
+
 
         public void CriarConta()
         {      
@@ -18,11 +16,11 @@ namespace Exercicio1ao10.Service
 
             if (option == 1)
             {
-                pfService.CriarContaPF();
+                CriarContaPF();
             }
             else if (option == 2)
             {
-                pjService.CriarContaPJ();
+                CriarContaPJ();
             }
             else
             {
@@ -31,55 +29,87 @@ namespace Exercicio1ao10.Service
             }
         }
 
-        public void SearchClient(string name)
+        public void CriarContaPF()
         {
-            Console.WriteLine("\nEscolha uma das opções: \n1. Pessoa Física \n2. Pessoa Jurídica");
-            int option = int.Parse(Console.ReadLine());
+            var pessoaFisica = new PessoaFisica();
 
-            if (option == 1)
+            Console.Write("\nInsira o número da conta: ");
+            int accountNumber;
+
+            while (!int.TryParse(Console.ReadLine(), out accountNumber))
             {
-                Console.Write("\nDigite o nome que deseja buscar: ");
-                var filtro = pf.Where(x => x.Name == name);
-                foreach (var pessoa in filtro)
-                {
-                    Console.WriteLine(pessoa.ToString());
-                }
+                Console.WriteLine("Número de conta inválido, digite um número válido.");
             }
-            else
+            pessoaFisica.AccountNumber = accountNumber;
+
+            pessoaFisica.Balance = 0;
+
+            pessoaFisica.ClientType = "Pessoa Física";
+
+            Console.Write("\nInsira o nome do cliente: ");
+            pessoaFisica.Name = Console.ReadLine();
+
+            Console.Write("Insira o CPF do cliente: ");
+            pessoaFisica.Cpf = Console.ReadLine();
+
+            Console.Write("Insira a idade do cliente: ");
+            pessoaFisica.Age = int.Parse(Console.ReadLine());
+
+            Console.Write("Insira o endereço do cliente: ");
+            pessoaFisica.Address = Console.ReadLine();
+
+            Console.Write("Insira o telefone do cliente: ");
+            pessoaFisica.PhoneNumber = Console.ReadLine();
+
+            clientes.Add(pessoaFisica);
+        }
+
+        public void CriarContaPJ()
+        {
+            var pessoaJuridica = new PessoaJuridica();
+
+            Console.Write("\nInsira o número da conta: ");
+            int accountNumber;
+
+            while (!int.TryParse(Console.ReadLine(), out accountNumber))
             {
-                Console.Write("\nDigite o nome que deseja buscar: ");
-                var filtro = pj.Where(x => x.Name == name);
-                foreach (var pessoa in filtro)
-                {
-                    Console.WriteLine(pessoa.ToString());
-                }
+                Console.WriteLine("Número de conta inválido, digite um número válido.");
+            }
+            pessoaJuridica.AccountNumber = accountNumber;
+
+            pessoaJuridica.Balance = 0;
+
+            pessoaJuridica.ClientType = "Pessoa Jurídica";
+
+            Console.Write("\nInsira o nome da empresa: ");
+            pessoaJuridica.Name = Console.ReadLine();
+
+            Console.Write("Insira o CNPJ da empresa: ");
+            pessoaJuridica.Cnpj = Console.ReadLine();
+
+            Console.Write("Insira o endereço da empresa: ");
+            pessoaJuridica.Address = Console.ReadLine();
+
+            Console.Write("Insira o telefone da empresa: ");
+            pessoaJuridica.PhoneNumber = Console.ReadLine();
+
+            clientes.Add(pessoaJuridica);
+        }
+
+        public void SearchClient(string name)
+        {                        
+            var search = clientes.Where(x => x.Name == name);
+            foreach (var cliente in search)
+            {
+                Console.WriteLine(cliente.ToString());
             }
         }
 
         public void ExibirClientes()
         {
-            foreach (var pessoaFisica in pf)
+            foreach (var cliente in clientes)
             {
-                Console.WriteLine("\nCliente: " + pessoaFisica.Name +
-                                  "\nTipo de Conta: " + pessoaFisica.ClientType +
-                                  "\nNúmero da Conta: " + pessoaFisica.AccountNumber +
-                                  "\nIdade: " + pessoaFisica.Age +
-                                  "\nCPF: " + pessoaFisica.Cpf +
-                                  "\nEndereço: " + pessoaFisica.Address +
-                                  "\nTelefone: " + pessoaFisica.PhoneNumber +
-                                  "\nSaldo: R$" + pessoaFisica.Balance);
-            }
-            Console.WriteLine();
-
-            foreach (var pessoaJuridica in pj)
-            {
-                Console.WriteLine("\nNome da Empresa: " + pessoaJuridica.Name +
-                                  "\nTipo de Conta: " + pessoaJuridica.ClientType +
-                                  "\nNúmero da Conta: " + pessoaJuridica.AccountNumber +
-                                  "\nCPF: " + pessoaJuridica.Cnpj +
-                                  "\nEndereço: " + pessoaJuridica.Address +
-                                  "\nTelefone: " + pessoaJuridica.PhoneNumber +
-                                  "\nSaldo: R$" + pessoaJuridica.Balance);
+                Console.WriteLine(cliente.ToString());
             }
             Console.WriteLine();
         }

@@ -25,10 +25,14 @@
             _Cnpj = cnpj;
         }
 
-        public void ResumoCliente()
+        public override string ConverterTexto()
+        {           
+            return $"{base.ConverterTexto()}\nCNPJ: {_Cnpj}\nNúmero da Conta: {_AccountNumber}";            
+        }
+
+        public override string ToString()
         {
-            Console.WriteLine($"\nCNPJ: {_Cnpj}");
-            base.ResumoCliente();
-        }        
+            return $"{base.ToString()}\nCNPJ: {_Cnpj}\nNúmero da Conta: {_AccountNumber}";
+        }
     }
 }

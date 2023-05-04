@@ -17,6 +17,7 @@ namespace Exercicio1ao10.Service
                     break;
 
                 case 2:
+                    Console.Write("\nDigite o nome que deseja buscar: ");
                     cs.SearchClient(Console.ReadLine());
                     break;
 

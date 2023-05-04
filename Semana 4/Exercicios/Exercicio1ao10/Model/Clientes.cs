@@ -49,9 +49,14 @@
             _Balance = balance;
         }
 
-        protected void ResumoCliente()
+        public virtual string ConverterTexto()
         {
-            Console.WriteLine($"\nNome: {_Name}\nTipo de Cliente: {_ClientType}\nEndereço: {_Address}\nTelefone: {_PhoneNumber}\nSaldo: {_Balance}");
+            return $"\nNome: {_Name}\nTipo de Cliente: {_ClientType}\nEndereço: {_Address}\nTelefone: {_PhoneNumber}\nSaldo: {_Balance}";
+        }
+
+        public override string ToString()
+        {
+            return $"\nNome: {_Name}\nTipo de Cliente: {_ClientType}\nEndereço: {_Address}\nTelefone: {_PhoneNumber}\nSaldo: {_Balance}";
         }
     }
 }
