@@ -42,17 +42,5 @@
         {
             return $"{base.ToString()}\nCPF: {_Cpf}\nIdade: {_Age}\nNúmero da Conta: {_AccountNumber}";
         }
-
-        public void EhMaior()
-        {
-            if(_Age > 18)
-            {
-                Console.WriteLine("\nO cliente é maior de idade.");
-            }
-            else
-            {
-                Console.WriteLine("O cliente é menor de idade.");
-            }
-        }
     }
 }

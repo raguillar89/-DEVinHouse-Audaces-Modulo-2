@@ -7,7 +7,6 @@ namespace Exercicio1ao10.Service
     {
         List<Clientes> clientes = new List<Clientes>();
 
-
         public void CriarConta()
         {      
             Inicio:
@@ -33,6 +32,15 @@ namespace Exercicio1ao10.Service
         {
             var pessoaFisica = new PessoaFisica();
 
+            Console.Write("Insira a idade do cliente: ");
+            pessoaFisica.Age = int.Parse(Console.ReadLine());
+
+            if (pessoaFisica.Age < 18)
+            {
+                Console.WriteLine("Não é possível criar conta para menor de idade.");
+                return;
+            }
+
             Console.Write("\nInsira o número da conta: ");
             int accountNumber;
 
@@ -50,10 +58,7 @@ namespace Exercicio1ao10.Service
             pessoaFisica.Name = Console.ReadLine();
 
             Console.Write("Insira o CPF do cliente: ");
-            pessoaFisica.Cpf = Console.ReadLine();
-
-            Console.Write("Insira a idade do cliente: ");
-            pessoaFisica.Age = int.Parse(Console.ReadLine());
+            pessoaFisica.Cpf = Console.ReadLine();            
 
             Console.Write("Insira o endereço do cliente: ");
             pessoaFisica.Address = Console.ReadLine();
