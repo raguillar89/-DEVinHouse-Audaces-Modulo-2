@@ -1,0 +1,15 @@
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\bin\Debug\net6.0\Exercicios.exe
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\bin\Debug\net6.0\Exercicios.deps.json
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\bin\Debug\net6.0\Exercicios.runtimeconfig.json
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\bin\Debug\net6.0\Exercicios.dll
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\bin\Debug\net6.0\Exercicios.pdb
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.csproj.AssemblyReference.cache
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.AssemblyInfoInputs.cache
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.AssemblyInfo.cs
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.dll
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\refint\Exercicios.dll
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.pdb
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\Exercicios.genruntimeconfig.cache
+C:\Users\Darth\Documents\Prog\Git\-DEVinHouse-Audaces-Modulo-2\Semana 5\Exercicios\Exercicios\obj\Debug\net6.0\ref\Exercicios.dll
