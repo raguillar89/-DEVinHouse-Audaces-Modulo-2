@@ -36,13 +36,11 @@ namespace TestProject
         public void TestSum()
         {
             var listTest = new List<int> { -6, 7, 8, 9, 10 };
-            var sumTest = 0;
 
             var listExpected = new List<int> { -7, 8, 8, 9, 10 };
-            var sumExpected = 0;
 
-            var resultTest = Metodos.Sum(sumTest, listTest);
-            var resultExpected = Metodos.Sum(sumExpected, listExpected);
+            var resultTest = Metodos.Sum(listTest);
+            var resultExpected = Metodos.Sum(listExpected);
             Console.WriteLine(resultTest);
             Console.WriteLine(resultExpected);
 

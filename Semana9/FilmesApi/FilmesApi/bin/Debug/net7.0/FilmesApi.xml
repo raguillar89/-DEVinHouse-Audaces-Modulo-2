@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmesApi</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesApi.Controllers.FilmesController.Get">
+            <summary>
+            Retorma uma Lista de Filmes
+            </summary>
+            <returns>Sucesso o retorno de uma Lista de Filmes</returns>
+            <response code="200">Sucesso no retorno da Lista de Filmes</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmesController.Get(System.Int32)">
+            <summary>
+            Requisição de um Filme
+            </summary>
+            <param name="id"></param>
+            <returns>Sucesso no retorno de um Filme</returns>
+            <response code="204">Sucesso no retorno de um Filme</response>
+            <response code="404">Não foi encontrado o Filme na Lista com o Id informado</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmesController.Post(FilmesApi.Models.Filme)">
+            <summary>
+            Criação de um Filme
+            </summary>
+            <param name="filme"></param>
+            <returns>Sucesso a criação de um Filme</returns>
+            <response code="201">Sucesso na criação do Filme</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmesController.Put(System.Int32,FilmesApi.Models.Filme)">
+            <summary>
+            Atualização de um Filme
+            </summary>
+            <param name="id"></param>
+            <param name="filme"></param>
+            <returns>Sucesso a atualização do Filme</returns>
+            <response code="204">Sucesso na atualização do Filme</response>
+            <response code="404">Não foi encontrado o Filme na Lista com o Id informado</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmesController.Delete(System.Int32)">
+            <summary>
+            Exclusão do Filme
+            </summary>
+            <param name="id"></param>
+            <returns>Sucesso na exclusão do Filme</returns>
+            <response code="204">Sucesso a exclusão do Filme</response>
+            <response code="404">Não foi encontrado o Filme na Lista com o Id informado</response>
+        </member>
+    </members>
+</doc>

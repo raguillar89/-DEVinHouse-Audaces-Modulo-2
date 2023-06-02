@@ -33,8 +33,9 @@ namespace Exercicios
             return list;
         }
 
-        public static int Sum(int sum, List<int> list)
+        public static int Sum(List<int> list)
         {
+            int sum = 0;
             foreach (var i in list)
             {
                 sum += i;

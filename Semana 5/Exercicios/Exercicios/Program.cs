@@ -21,8 +21,7 @@
             }
 
             List<int> list3 = new List<int> { -1, 2, 3, 4, 5 };
-            var sum = 0;
-            var result = Metodos.Sum(sum, list3);
+            var result = Metodos.Sum(list3);
             Console.WriteLine($"\n\nTotal = {result}");
 
             Console.WriteLine();
